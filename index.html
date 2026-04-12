@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Dropdown</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dd-root">
+      <h2 class="sr-only">Custom dropdown selector with five options</h2>
+
+      <div class="dd-wrapper" id="dropdown">
+        <div
+          class="dd-trigger"
+          id="trigger"
+          role="button"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          tabindex="0"
+        >
+          <span class="dd-placeholder" id="triggerLabel">Select an Item</span>
+          <span class="dd-arrow" id="arrow">&#8964;</span>
+        </div>
+
+        <div class="dd-list" id="list" role="listbox">
+          <div class="dd-item" data-value="first" role="option" tabindex="-1">
+            <span>First Item</span>
+            <span class="dd-check" aria-hidden="true">
+              <svg viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 5L4.5 8.5L12 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </div>
+
+          <div class="dd-item" data-value="second" role="option" tabindex="-1">
+            <span>Second Item</span>
+            <span class="dd-check" aria-hidden="true">
+              <svg viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 5L4.5 8.5L12 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </div>
+
+          <div class="dd-item" data-value="third" role="option" tabindex="-1">
+            <span>Third Item</span>
+            <span class="dd-check" aria-hidden="true">
+              <svg viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 5L4.5 8.5L12 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </div>
+
+          <div class="dd-item" data-value="fourth" role="option" tabindex="-1">
+            <span>Fourth Item</span>
+            <span class="dd-check" aria-hidden="true">
+              <svg viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 5L4.5 8.5L12 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </div>
+
+          <div class="dd-item" data-value="fifth" role="option" tabindex="-1">
+            <span>Fifth Item</span>
+            <span class="dd-check" aria-hidden="true">
+              <svg viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 5L4.5 8.5L12 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
